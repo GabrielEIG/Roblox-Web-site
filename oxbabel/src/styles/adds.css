@@ -1,0 +1,42 @@
+.adds-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin: 5px;
+    background: red;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .social-icons a:hover {
+    box-shadow: 0 0 10px rgba(32, 11, 11, 0.829);
+
+  }
+  
+  .social-icons a.youtube {
+    background: red;
+  }
+  
+  @media (max-width: 768px) {
+    .social-icons {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .social-icons a {
+      margin: 5px 0;
+    }
+  }

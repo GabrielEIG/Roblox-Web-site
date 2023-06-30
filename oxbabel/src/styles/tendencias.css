@@ -1,0 +1,14 @@
+
+  
+  .tendencia-page {
+    margin-bottom: 10%;
+  }
+  
+  .tendencia-page .mask {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }

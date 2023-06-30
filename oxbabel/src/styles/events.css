@@ -1,0 +1,30 @@
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .eventos-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .eventos-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+
+  @media (max-width: 480px) {
+    .eventos-container h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .eventos-container img {
+      max-width: 200px;
+    }
+  }
+  
