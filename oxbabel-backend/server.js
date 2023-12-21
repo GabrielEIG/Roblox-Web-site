@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan'); 
-const router = require('./routes/route');
+const router = require('./routes/route.js');
 const mongodb = require('./mongodb.js');
 const dotenv = require('dotenv');
 
@@ -12,7 +12,7 @@ dotenv.config();
 const app = express()
 
 //Server port
-const port = process.env.PORT
+const port = process.env.PORT || 3001
 
 //Confing
 app.use(cors());
