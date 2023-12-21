@@ -12,13 +12,13 @@ const Home = () => {
 
 
   const getDatas = async () => {
-    const response = await fetch("http://localhost:3001/api/tendencias");
+    const response = await fetch("http://robloxbabel.onrender.com/api/tendencias");
     const result = await response.json();
     setvideos(result);
   };
 
   const getMods = async () => {
-    const response = await fetch("http://localhost:3001/api/mods");
+    const response = await fetch("http://robloxbabel.onrender.com/api/mods");
     const result = await response.json();
     setmods(result);
   };

@@ -8,7 +8,7 @@ const Tendencias = () => {
   const [loading, setLoading] = useState(true);
 
   const getDatas = async () => {
-    const response = await fetch("http://localhost:3001/api/tendencias");
+    const response = await fetch("https://robloxbabel.onrender.com/api/tendencias");
     const result = await response.json();
     setVideos(result);
     setLoading(false);

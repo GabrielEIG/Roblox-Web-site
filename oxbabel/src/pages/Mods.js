@@ -9,7 +9,7 @@ export const Mods = () => {
   const [loading, setLoading] = useState(true); // Estado para controlar la carga
 
   const getMods = async () => {
-    const response = await fetch("http://localhost:3001/api/mods");
+    const response = await fetch("https://robloxbabel.onrender.com/api/mods");
     const result = await response.json();
     let mods2 = result.filter(mod => mod.title.split(' ').join('-') === params.title);
     setMod(mods2[0]);
